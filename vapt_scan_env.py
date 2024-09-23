@@ -17,8 +17,8 @@ today = date.today()
 d1 = today.strftime("%d%m%Y")
 PROJ = os.getenv("PROJ") # Enter Project Name
 SCAN_URL = os.getenv("SCAN_URL")
-ZAP_SERVER_IP = "10.100.20.189"
-JENKINS_SERVER_IP = "10.100.20.50"
+ZAP_SERVER_IP = "ZAPserverIP"
+JENKINS_SERVER_IP = "Jenkins IP"
 JENKINS_SERVER_PATH = os.getenv("JENKINS_SERVER_PATH")
 ### Variables ###
 #print(f"{PROJ}")
@@ -65,7 +65,7 @@ def MailAlert():
 Please find the VAPT scan report attachement for {PROJ} taken on {today.strftime("%d-%m-%Y")}.
 
 Thanks,
-ALM Team.''')
+vapt Team.''')
     print("Mail Started ...", end='\r', flush=True)
     files = [pdf_filename]
     for file in files:
