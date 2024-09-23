@@ -52,9 +52,9 @@ def GenerateReport():
 
 ### Mail Alert the ZAP Scan Report ###
 def MailAlert():
-    EMAIL_ADDRESS = 'almsupport@xerago.com' # Enter Email Address
+    EMAIL_ADDRESS = 'janathkumar06@gmail.com' # Enter Email Address
     EMAIL_PASSWORD = 'Xmail$531' # Enter Email Password
-    RECIPS = ['QA@xerago.com', 'Kumaran@xerago.com'] # Enter Recipients Address
+    RECIPS = ['abc@xerago.com', '123@gmail.com', 'janathkumar@gmail.com'] # Enter Recipients Address
 
     msg = EmailMessage()
     msg['Subject'] = f'VAPT Report for {PROJ} {today.strftime("%d-%m-%Y")}'
